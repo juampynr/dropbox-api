@@ -1,8 +1,6 @@
 {
     "name": "juampynr/dropbox-api",
-    "license": {
-        "GPL-3.0-or-later"
-    },
+    "license": "GPL-3.0-or-later",
     "require": {
         "kunalvarma05/dropbox-php-sdk": "^0.2.1",
         "vlucas/phpdotenv": "^2.4"
