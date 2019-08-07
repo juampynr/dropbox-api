@@ -23,6 +23,6 @@ $app = new DropboxApp(getenv('DROPBOX_CLIENT_ID'), getenv('DROPBOX_CLIENT_SECRET
 $dropbox = new Dropbox($app);
 
 // Upload a file.
-$pathToLocalFile = __DIR__ . '/../../' . $argv[1];
+$pathToLocalFile = $argv[1];
 $dropboxFile = new DropboxFile($pathToLocalFile);
 $file = $dropbox->upload($dropboxFile, '/' . basename($argv[1]), ['mode' => 'overwrite']);
